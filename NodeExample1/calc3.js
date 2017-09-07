@@ -15,3 +15,4 @@ Calc.prototype.add = function (a, b) {
 };
 
 module.exports = Calc;
+module.exports.title = 'calculator';
