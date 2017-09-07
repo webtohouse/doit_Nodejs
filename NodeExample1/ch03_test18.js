@@ -15,6 +15,10 @@ Person.prototype.walk = function(speed) {
     console.log(this.name + ':' + speed + 'km 속도로 달려 갑니다.');
 };
 
+Person.fly = function(fly) {
+    console.log(this.name + ':' + fly + 'km 속도로 날아요.');
+};
+
 Person.prototype.speed = function (speed, walk) {
     console.log(this.name + ':' + speed + 'km 속도로 달리고' + walk + 'km 속도로 걸어요')
 };
@@ -25,3 +29,4 @@ var person4 = new Person('마징가', 50);
 
 person3.walk(10);
 person3.speed(20, 6);
+person3.fly(1000);
