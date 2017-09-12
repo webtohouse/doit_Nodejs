@@ -22,7 +22,7 @@ console.log('두 번째 버퍼의 문자열 : ' + buffer2.toString());
 console.log('버퍼 객체의 타입 : ' + Buffer.isBuffer(buffer1)); // true
 
 // 버퍼 객체에 들어있는 문자열 데이터를 문자열 변수로 만듭니다.
-var bytesLen = Buffer.byteLength(output);
+var bytesLen = Buffer.byteLength(output); //byteLength Buffer의 길이
 console.log(bytesLen);
 
 var str1 = buffer1.toString('utf8', 0, bytesLen);
