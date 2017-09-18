@@ -22,8 +22,7 @@ app.use(function(req, res, next) {
 
     var userAgent = req.header('User-Agent');
     // var paramName = req.param('name');
-    // var paramName = req.query.name;
-    var paramName = req.params.name;
+    var paramName = req.query.name;
 
     res.writeHead('200', {'Content-Type':'text/html;charset=utf=8'});
     res.write('<h1>Express 서버에서 응답한 결과입니다.</h1>');
